@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="blog-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+
+    <nav class="nav flex" >
+        <div class="user-name" id="user-name">
+            <h4></h4>
+        </div>  
+        <div>
+            <h3 class="quotes-container">' Remember, you have the power to rewrite your story. Start today and create a life filled with joy, purpose, and fulfillment. '</h3>
+        </div>
+        <div class="blogs-signout flex">
+            <a href="#"><img class="theme" id="theme" src="moon.png"></a>
+            <!-- <a href="#" class="global-chat" id = "global-chat">Global Chat</a> -->
+            <a href="index.html" class="home" id = "home">Home Page</a>
+            <!-- <a href="index.html" class="signout" id="signout">Sign Out</a> -->
+        </div>
+    </nav>
+    <div class="blog-main">
+        <div class="blog-search flex" id="blog-search">
+            <input type="text" class="search-text" id="search-text" placeholder="e.g. science">
+            <input type="button" class="search-button" id="search-button" value="Submit">
+        </div>
+
+        <div class="article-holder flex" id="article-holder">
+
+        </div>
+
+
+        <!-- template for articles -->
+        <template id="template-article">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" id="article-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="article-title">This is card heading</h3>
+                    <h6 class="article-source" id="article-source">Author DD/MM/YYYY</h6>
+                    <p class="article-desc" id="article-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam consectetur quisquam optio rerum labore illo accusamus odit vitae ea?</p>
+                </div>
+            </div>
+        </template>
+    </div>
+    <script src="blog.js"></script>
+</body>
+</html>
+
+

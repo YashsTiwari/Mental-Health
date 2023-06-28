@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog-style.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8338dd94e.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="light">
+    <div class="container">
+        <nav class="nav flex" >
+            <div class="user-name" id="user-name">
+                <h4></h4>
+            </div>
+            <div>
+                <h3 class="quotes-container">' Your mind is a powerful tool. Take control of it and you'll take control of your life. '</h3>
+            </div>
+            <div class="blogs-signout flex">
+                <a href="#"><img class="theme" id="theme" src="moon.png"></a>
+                <a href="#" class="global-chat " id = "global-chat">Global Chat</a>
+                <a href="blog.html" class="blog " id = "blog">Blogs</a>
+                <a href="#" class="signout " id="signout">Sign in</a>
+            </div>
+        </nav>
+
+        <div class="maincontent flex">
+
+            <!-- sidebar -->
+            <aside class="left-column">
+               
+                <div class="percentage-box">
+                    <div>Goal completed</div>
+                    <div id="percentage">0%</div>
+                </div>
+
+                <div class="moods">
+
+                    <div class="pinned-moods">
+                        <p class="moods-title">Today I'm-</p>
+                    </div>
+
+                    <div class="mood flex">
+                        <label for="Happy">Happy</label>
+                        <input type="checkbox" name="Happy" id="Happy">
+                    </div>
+
+                    <div class="mood flex">
+                        <label for="Smiling">Smiling</label>
+                        <input type="checkbox" name="Smiling" id="Smiling">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="Calm">Calm</label>
+                        <input type="checkbox" name="Calm" id="Calm">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="Positive">Positive</label>
+                        <input type="checkbox" name="Positive" id="Positive">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="Focused">Focused</label>
+                        <input type="checkbox" name="Focused" id="Focused">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="Motivated">Motivated</label>
+                        <input type="checkbox" name="Motivated" id="Motivated">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="Energized">Energized</label>
+                        <input type="checkbox" name="Energized" id="Energized">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="Peaceful">Peaceful</label>
+                        <input type="checkbox" name="Peaceful" id="Peaceful">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="Confident">Confident</label>
+                        <input type="checkbox" name="Confident" id="Confident">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="Productive">Productive</label>
+                        <input type="checkbox" name="Productive" id="Productive">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="SociallyConnected">Socially connected</label>
+                        <input type="checkbox" name="SociallyConnected" id="SociallyConnected">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="EmotionallyStable">Emotionally stable</label>
+                        <input type="checkbox" name="EmotionallyStable" id="EmotionallyStable">
+                    </div>
+                    
+                    <div class="mood flex">
+                        <label for="WellRested">Well-rested</label>
+                        <input type="checkbox" name="WellRested" id="WellRested">
+                    </div>
+                    
+                </div>
+
+            </aside>
+
+            <!-- main data  -->
+           <main class="main">
+            <div class="center-quote"><h1 id="center-quote">Embrace your mind, let happiness unwind.</h1></div>
+            <div class="main-img"><img src="main-bkg.png"></div>
+           </main>
+        </div>
+    </div>
+
+    <!-- login page -->
+    
+    <div class="innerbox form-display-hidden">
+        <div class="signup-header">
+            <h1>Signin</h1>
+            <div class="cross" id="cross"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+            <!-- <p>It takes 30 sec.</p> -->
+        </div>
+
+        <div class="signup-body">
+            <form action="#">
+                <p>
+                    <label for="fullname">User Name</label>
+                    <input type="text" id="usernameForm" placeholder="Enter your User Name" required>
+                </p>
+                <!-- <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                </p> -->
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Minimum 8 characters" required>
+                </p>
+                <p>
+                    <input type="submit" id="login-submit" value="Signin" >
+                </p>
+            </form>
+        </div>
+
+        <div class="signup-footer">
+            <!-- <p>Already Signed up? -->
+                <a href="#">Forgotten Password?</a>
+            <!-- </p> -->
+        </div>
+    </div>
+
+    <!-- <template class="template-post-message" id="template-post-message"> 
+        <div class="template-content">
+            <h5 id="template-card-user-name">user_name</h5>
+            <p id="template-card-message">sample message</p>
+            <h6 id="template-card-time" class="template-card-time">time</h6>
+        </div>
+    </template> -->
+    
+    <script src="main-script.js"></script>
+    <script src="blog.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
