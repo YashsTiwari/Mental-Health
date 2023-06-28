@@ -25,7 +25,7 @@ function bindData(articles){
     
 }
 function fillData(cloneNode,article){
-  if(!article.urlToImage || !article.title || !article.description || !article.publishedAt || !article.source.name)return;
+ // if(!article.urlToImage || !article.title || !article.description || !article.publishedAt || !article.source.name)return;
     const articleImg=cloneNode.querySelector("#article-img");
     const articleTitle=cloneNode.querySelector("#article-title");
     const articleSource=cloneNode.querySelector("#article-source");
